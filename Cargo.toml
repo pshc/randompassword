@@ -1,10 +1,12 @@
 [package]
-name = "xkcdpass"
-version = "0.1.0"
-authors = ["pc"]
+name = "randompassword"
+version = "1.0.0"
+description = "Simple random password generator"
+authors = ["Paul Collier"]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/pshc/randompassword"
+license = "ISC"
+keywords = ["password"]
 
 [dependencies]
 rand = "0.7.3"
