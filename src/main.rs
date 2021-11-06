@@ -2,7 +2,7 @@
 
 use std::io::prelude::*;
 use flate2::read::GzDecoder;
-use rand::prelude::SliceRandom;
+use rand::prelude::*;
 
 const WORDS_GZ: &'static [u8] = include_bytes!("words.txt.gz");
 
@@ -20,5 +20,6 @@ fn main() {
         }
         print!("{}", words.choose(&mut rng).unwrap());
     }
-    println!("");
+    let number: u16 = rng.gen_range(100, 1000);
+    println!(" {}", number);
 }
